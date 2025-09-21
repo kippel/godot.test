@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://446yj5ehc8ut"]
+
+[ext_resource type="Script" uid="uid://c5kkwrlwhwbtb" path="res://world/quit.gd" id="1_jph7x"]
+
+[node name="quit" type="CanvasLayer"]
+script = ExtResource("1_jph7x")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1105.0
+offset_top = 5.0
+offset_right = 1144.0
+offset_bottom = 36.0
+text = "quit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
